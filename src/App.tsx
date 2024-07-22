@@ -1,11 +1,11 @@
-import Layout from "../src/pages/Layout";
+import Paths from "./Routes/Paths";
 
 function App() {
   
 
   return (
     <>
-      <Layout/>
+      <Paths/>
     </>
   )
 }
