@@ -1,4 +1,5 @@
 import Paths from "./Routes/Paths";
+import Footer from "./components/Footer";
 
 function App() {
   
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <Paths/>
+      <Footer/>
     </>
   )
 }
