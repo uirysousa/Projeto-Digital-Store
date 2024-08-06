@@ -1,6 +1,6 @@
-import HomePage from "./pages/HomePage"
-import Paths from "./Routes/Paths";
-import Footer from "./components/Footer";
+
+import Paths from "./routes/Paths";
+
 
 function App() {
   
@@ -8,8 +8,6 @@ function App() {
   return (
     <>
       <Paths/>
-      <HomePage/>
-      <Footer/>
     </>
   )
 }
