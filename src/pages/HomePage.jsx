@@ -24,24 +24,34 @@ const HomeConteiner = styled.header`
 const HomePage = () => {
 
     const Galeria =[
-        {title:'este texto tem que aparecer' ,
-        text:'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
+        {title:'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.' ,
+        text:'Ver Ofertas',
         imagem:'./src/assets/tenis.png'},
+    ];
+    const Galeria2 =[
+        {title:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip' ,
+        text:'Ver Ofertas',
+        imagem:'./public/jordanAir.png'},
     ];
 
     return (
-      <> 
-       <HomeConteiner>
-            <h4>Melhores ofertas personalizadas</h4>
-        <div>
-            <Gallery title="Queima de stoque Nike 🔥" 
-            images={Galeria}/>
-        </div>
-        </HomeConteiner>
-        <>
-        
-        </>
-      </>  
+      <>
+          <HomeConteiner>
+              <h4>Melhores ofertas personalizadas</h4>
+          <div>
+              <Gallery title="Queima de stoque Nike 🔥" 
+              images={Galeria}/>
+          </div>
+          </HomeConteiner>
+
+          <HomeConteiner>
+              <h4>Oferta especial</h4>
+          <div>
+              <Gallery title="Air Jordan edição de colecionador" 
+              images={Galeria2}/>
+          </div> 
+          </HomeConteiner>
+      </>    
       );
 }
  
