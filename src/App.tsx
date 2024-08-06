@@ -1,5 +1,5 @@
+import Paths from "./Routes/Paths";
 
-import Paths from "./routes/Paths";
 
 
 function App() {
