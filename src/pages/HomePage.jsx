@@ -30,13 +30,18 @@ const HomePage = () => {
     ];
 
     return (
-        <HomeConteiner>
+      <> 
+       <HomeConteiner>
             <h4>Melhores ofertas personalizadas</h4>
         <div>
             <Gallery title="Queima de stoque Nike 🔥" 
             images={Galeria}/>
         </div>
         </HomeConteiner>
+        <>
+        
+        </>
+      </>  
       );
 }
  
