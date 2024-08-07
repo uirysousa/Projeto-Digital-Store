@@ -9,7 +9,6 @@ const SectionConteiner = styled.header`
     height:400px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color:red;
     &&
     h2{
       display:flex;
