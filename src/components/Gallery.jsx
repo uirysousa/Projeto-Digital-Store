@@ -7,7 +7,7 @@ const Gallery = ({title,images}) => {
                     <li key={index}>
                         {info.title}
                        <button>{info.text}</button> 
-                        {<img src={info.imagem} width="1440px" height="681px" />}
+                        {<img src={info.imagem} width="733.51px" height="431.61px" />}
                     </li>
              ))}
         </ul>      

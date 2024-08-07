@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Gallery from "../components/Gallery";
+import Section from "../components/Section";
 
 const HomeConteiner = styled.header`
     display:flex;
@@ -43,6 +44,8 @@ const HomePage = () => {
               images={Galeria}/>
           </div>
           </HomeConteiner>
+          
+          <Section/>
 
           <HomeConteiner>
               <h4>Oferta especial</h4>
