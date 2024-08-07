@@ -10,13 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "all": "^0.0.0",
+    "dependencies": "^0.0.1",
+    "in": "^0.19.0",
+    "install": "^0.13.0",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
     "primereact": "^10.7.0",
+    "project": "^0.1.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
-    "styled-components": "^6.1.12"
+    "styled-components": "^6.1.12",
+    "the": "^1.0.2",
+    "your": "^0.2.3"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

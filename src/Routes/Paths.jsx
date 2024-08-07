@@ -13,8 +13,9 @@ const Paths = () => {
                 <Routes>
                     <Route path="/" element={<Layout />} >
                         <Route path="/" element={<HomePage />} />
-                        <Route path="/ProductListingPage" element={<ProductListingPage />} />
+                        <Route path="/ProductListingPage" element={<ProductListingPage/>} />
                         <Route path="/ProductViewPage" element={<ProductViewPage />} />
+                        
                     </Route>
                 </Routes>
             </BrowserRouter>
