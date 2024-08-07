@@ -41,7 +41,20 @@ const SectionConteiner = styled.header`
     height:48px;
     border-radius:6px;
     }
-    
+    && 
+    h3{
+      display:flex;
+      text-align:center;
+      justify-content:center;
+      font-size:30px;
+      margin-left:85px;
+      color:#474747;
+      width:283px;
+      height:38px;  
+    }  
+    && .colecao {
+        background-color:red;
+    } 
 `
 
 const Section = () => {
@@ -64,6 +77,12 @@ const Section = () => {
                      <img src="./public/collection-3.png" alt="colecao 3" style={{borderRadius:'4px'}} />
                 </div>
                 <Button label="Comprar"/>
+            </div>
+            <div id='colecao'>
+                <h3 className="title2">Coleções em destaque</h3>
+                <div>
+                    <img src="./public/galeria.png" alt="galeria2" />
+                </div>
             </div>
 
         </SectionConteiner>
