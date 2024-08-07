@@ -49,6 +49,7 @@ const Section = () => {
         <SectionConteiner>
             <h2 className="title">Coleções em destaque</h2>
             <div>
+                <Button label="Comprar"/>
                 <div>
                     <img src="./public/collection-1.png" alt="colecao 1" style={{borderRadius:'4px'}} />
                 </div>
