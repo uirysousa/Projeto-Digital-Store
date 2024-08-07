@@ -1,7 +1,5 @@
 import Paths from "./Routes/Paths";
 
-
-
 function App() {
   
 
