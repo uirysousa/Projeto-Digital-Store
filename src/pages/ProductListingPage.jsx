@@ -1,7 +1,8 @@
 import ProductListing from "../components/ProductListing";
 
 const ProductListingPage = () => {
-  return (
+ 
+    return (
     <>
       <h1>ProductListingPage</h1>
       <ProductListing/>
