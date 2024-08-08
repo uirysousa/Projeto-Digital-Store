@@ -7,12 +7,12 @@ import Informations from './Information';
 const FooterContainer = styled.header`
     background-color:#1F1F1F;
     width:1440px;
-    height:454px;
+    height:370px;
     color:white;
     & div{
         display:flex;
         justify-content: flex-start;
-        gap: 80px;
+        gap: 50px;
     }
     &  h2{
         display:flex;
@@ -35,12 +35,32 @@ const FooterContainer = styled.header`
     }  
     & p{
         display:flex;
+        text-align: justify;
+        width: 307px;
+        height: 78px;
+        padding: 58px;
+        position: relative;
+        top: 50px;
     }
 
     & .autorais{
         display:flex;
         justify-content:center;
+        width: 1440px;
+        position: relative;
+        top: -17px;
     }
+    & hr{
+        position: relative;
+        top: 45px;
+    };
+    & img{
+        display: flex;
+        position: relative;
+        top: 100px;
+        right: -55px;
+    };
+
 `;  
 
 const Footer = () => {
