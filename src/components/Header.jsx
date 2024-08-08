@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
 import "primeicons/primeicons.css";
+import BarraPesquisa from "./SeachBar";
+
 
 const HeaderContainer = styled.header`
   background-color: #ffffff;
@@ -11,7 +13,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   width: 100%;
   max-width: 1340px;
-  margin: 0 auto;
+  margin: 25px auto;
 `;
 
 const TopSection = styled.div`
@@ -68,52 +70,6 @@ const NavSection = styled.nav`
   }
 `;
 
-const SearchBar = styled.div`
-  display: flex;
-  align-items: center;
-  flex: 1;
-  max-width: 600px;
-  margin: 0 20px;
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-    margin: 10px 0;
-  }
-`;
-
-const SearchInput = styled.input`
-  width: 100%;
-  height: 40px;
-  border: 1px solid #79767612;
-  border-radius: 2px;
-  outline: none;
-  background-color: #79767612;
-  padding: 0 10px;
-
-  &::placeholder {
-    color: #7976766b;
-    font-size: 14px;
-  }
-
-  @media (max-width: 768px) {
-    height: 35px;
-    font-size: 14px;
-  }
-`;
-
-const SearchButton = styled.button`
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #999;
-  font-size: large;
-  padding: 0 10px;
-
-  @media (max-width: 768px) {
-    font-size: medium;
-  }
-`;
-
 const UserActions = styled.div`
   display: flex;
   align-items: center;
@@ -158,7 +114,21 @@ const Button = styled.button`
   }
 `;
 
+const SearchBar = styled.div`
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+`;
+
 const Header = () => {
+
   return (
     <HeaderContainer>
       <TopSection>
@@ -166,8 +136,7 @@ const Header = () => {
           <img src={logo} alt="Logo" />
         </Link>
         <SearchBar>
-          <SearchInput type="text" placeholder="Pesquisar produto..." />
-          <SearchButton><i className="pi pi-search"></i></SearchButton>
+          <BarraPesquisa/>
         </SearchBar>
         <UserActions>
           <Link to={"/cadastro"}>Cadastre-se</Link>

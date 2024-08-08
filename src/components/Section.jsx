@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const SectionConteiner = styled.header` 
     display:flex;
     flex-wrap:wrap;
-    width: 1440px;
+    width: 100%;
     height:700px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -27,6 +27,7 @@ const SectionConteiner = styled.header`
     border-Radius:4px;
     margin-right: -46px;
     margin-left: 2px;
+    width: 100%;
     }
     && .p-button{
     background-color:#F5F5F5;
@@ -37,7 +38,7 @@ const SectionConteiner = styled.header`
     position:relative;
     top:80px;
     right:335px;
-    width:153px;
+    width:266px;
     height:48px;
     border-radius:6px;
     }
@@ -59,7 +60,7 @@ const Colecao2 = styled.header`
     align-items:center;
     flex-direction:column;
     flex-wrap:wrap;
-    width: 1400px;
+    width: 100%;
     height:400px;
     margin-top: 5px;
     margin-bottom:100px;
@@ -72,6 +73,9 @@ const Colecao2 = styled.header`
     border-Radius:4px;
     margin-right: -46px;
     margin-left: 2px;
+    position: relative;
+    top: -9px;
+    left: 400px;
     }
 `
 
@@ -101,6 +105,10 @@ const Section = () => {
                     <img src="./public/galeria.png" alt="galeria2" />
                 </div>
             </Colecao2>
+
+            <div>
+            <h3 className="title2">Coleções em destaque</h3>
+            </div>
 
         </SectionConteiner>
       );

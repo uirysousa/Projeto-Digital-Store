@@ -6,7 +6,7 @@ import Informations from './Information';
 
 const FooterContainer = styled.header`
     background-color:#1F1F1F;
-    width:1440px;
+    width:100%;
     height:370px;
     color:white;
     & div{
@@ -62,6 +62,15 @@ const FooterContainer = styled.header`
     };
 
 `;  
+const Icones = styled.header`
+    display:flex;
+    width:124px;
+    height:20px;
+    gap:20px;
+    position:relative;
+    top:100px;
+    right:400px;
+`;
 
 const Footer = () => {
     const infos = [
@@ -89,7 +98,11 @@ const Footer = () => {
            <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
                 </p>
-
+                <Icones>
+                    <img src="./src/assets/facebook.svg" alt="logo Facebook" />
+                    <img src="./src/assets/instagram.svg" alt="logo Instagram" />
+                    <img src="./src/assets/twitter.svg" alt="logo Twitter" />
+                </Icones>
                 <div>
                     <Informations title="Informação" informations={infos}/>
                 </div>
