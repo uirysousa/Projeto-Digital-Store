@@ -6,7 +6,7 @@ const SectionConteiner = styled.header`
     display:flex;
     flex-wrap:wrap;
     width: 1440px;
-    height:400px;
+    height:700px;
     margin-top: 50px;
     margin-bottom: 50px;
     &&
@@ -17,7 +17,7 @@ const SectionConteiner = styled.header`
       font-size:30px;
       margin-left:85px;
       color:#474747;
-      width:283px;
+      width:400px;
       height:38px;  
     }
     && div{
@@ -52,9 +52,27 @@ const SectionConteiner = styled.header`
       width:283px;
       height:38px;  
     }  
-    && .colecao {
-        background-color:red;
-    } 
+`
+const Colecao2 = styled.header`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width: 1400px;
+    height:400px;
+    margin-top: 5px;
+    margin-bottom:100px;
+    && 
+    
+    img{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    border-Radius:4px;
+    margin-right: -46px;
+    margin-left: 2px;
+    }
 `
 
 const Section = () => {
@@ -78,12 +96,13 @@ const Section = () => {
                 </div>
                 <Button label="Comprar"/>
             </div>
-            <div id='colecao'>
+               
+            <Colecao2>
                 <h3 className="title2">Coleções em destaque</h3>
                 <div>
                     <img src="./public/galeria.png" alt="galeria2" />
                 </div>
-            </div>
+            </Colecao2>
 
         </SectionConteiner>
       );

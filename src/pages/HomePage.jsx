@@ -2,6 +2,14 @@ import styled from "styled-components";
 import Gallery from "../components/Gallery";
 import Section from "../components/Section";
 
+
+
+const ConteinerPrincipal = styled.header`
+    display:flex;
+    flex-direction:column;
+    width:1440px;
+    height:2300px;
+`
 const HomeConteiner = styled.header`
     display:flex;
     background-color:#F5F5F5;
@@ -19,8 +27,17 @@ const HomeConteiner = styled.header`
         display:flex;
         background-color:blue;
     };
-
 `
+const Galeria2Conteiner = styled.header`
+    display:flex;
+    flex-wrap:wrap;
+    width: 1440px;
+    height:400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:aqua;
+ `
+
 
 const HomePage = () => {
 
@@ -36,7 +53,7 @@ const HomePage = () => {
     ];
 
     return (
-      <>
+      <ConteinerPrincipal>
           <HomeConteiner>
               <h4>Melhores ofertas personalizadas</h4>
           <div>
@@ -47,14 +64,14 @@ const HomePage = () => {
           
           <Section/>
 
-          <HomeConteiner>
+          <Galeria2Conteiner>
               <h4>Oferta especial</h4>
           <div>
               <Gallery title="Air Jordan edição de colecionador" 
               images={Galeria2}/>
           </div> 
-          </HomeConteiner>
-      </>    
+          </Galeria2Conteiner>
+      </ConteinerPrincipal>    
       );
 }
  
