@@ -1,5 +1,6 @@
 const ProductListingPage = () => {
-  return (
+ 
+    return (
     <>
       <h1>ProductListingPage</h1>
     </>
