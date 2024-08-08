@@ -85,12 +85,10 @@ const Section = () => {
                     <img src="./public/collection-1.png" alt="colecao 1" style={{borderRadius:'4px'}} />
                 </div>
                     <Button label="Comprar"/>
-
                 <div>
                     <img src="./public/collection-2.png" alt="colecao 2" style={{borderRadius:'4px'}} />
                  </div>
                  <Button label="Comprar"/>
-
                 <div>
                      <img src="./public/collection-3.png" alt="colecao 3" style={{borderRadius:'4px'}} />
                 </div>
