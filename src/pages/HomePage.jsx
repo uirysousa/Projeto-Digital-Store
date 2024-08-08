@@ -12,7 +12,6 @@ const ConteinerPrincipal = styled.header`
 `
 const HomeConteiner = styled.header`
     display:flex;
-    background-color:#F5F5F5;
     width:1440px;
     height:681px;
     flex-direction: column;
