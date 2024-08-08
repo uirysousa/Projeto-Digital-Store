@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import tenis from '../assets/tenis.png'
 
 
 
@@ -48,7 +48,7 @@ const ProductViewPage = () => {
   return (
     <ProductViewPageContainer>
       <ProductImage>
-        <img src={Tenis} alt="Product" />
+        <img src={tenis} alt="Product" />
       </ProductImage>
       <ProductInfo>
       <h1>
