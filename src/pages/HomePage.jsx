@@ -15,17 +15,36 @@ const HomeConteiner = styled.header`
     background-color:#F5F5F5;
     width:1440px;
     height:681px;
-    justify-content:center;
+    flex-direction: column;
+    justify-content:flex-start;
     align-items:center;
     
     && div{
         display:flex;
-        width:733.51px;
-        height:431.61px;
-    }
-    && h4{
+        width: 1440px;
+        height: 681px;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;        
+    };
+    &&
+    h2{
         display:flex;
-        background-color:blue;
+        flex-wrap:wrap;
+        justify-content:center;
+        height: 132px;
+        width: 361px;
+        font-size: xxx-large;
+    };
+    && h4{
+        display: flex;
+        flex-wrap: wrap;
+        width: 280px;
+        height: 24px;
+        position: relative;
+        top: 230px;
+        left: 182px;
+        color: #F6AA1C;
     };
 `
 const Galeria2Conteiner = styled.header`
@@ -36,6 +55,48 @@ const Galeria2Conteiner = styled.header`
     margin-top: 10px;
     margin-bottom: 10px;
     background-color:aqua;
+ `
+ const ItemGaleria1 = styled.li`
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &&
+    p{
+        display:flex;
+        width: 350px;
+        height: 50px;
+        text-align: justify;
+        position: relative;
+        top: -40px;  
+    };
+    &&
+    button{
+    display: flex;
+    width: 220px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    font-weight:bold;
+    border-radius: 4px;
+    background: #C92071;
+    position: relative;
+    top: -36px;
+    right: 66px;
+    };
+    &&
+    li{
+        display:flex;
+        width: 1440px;
+        height: 681px;
+    };
+    &&
+    img{
+    display: flex;
+    position: relative;
+    top: 11px;
+    right: 261px;
+    }   
  `
 
 
@@ -55,11 +116,12 @@ const HomePage = () => {
     return (
       <ConteinerPrincipal>
           <HomeConteiner>
-              <h4>Melhores ofertas personalizadas</h4>
-          <div>
-              <Gallery title="Queima de stoque Nike 🔥" 
+            <ItemGaleria1>
+            <h4>Melhores ofertas personalizadas</h4>
+              <Gallery
+               title="Queima de stoque Nike 🔥" 
               images={Galeria}/>
-          </div>
+            </ItemGaleria1>
           </HomeConteiner>
           
           <Section/>
