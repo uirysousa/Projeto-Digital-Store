@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Tenis from '../assets/tenis.png';
+
 
 
 
