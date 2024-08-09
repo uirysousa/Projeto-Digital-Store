@@ -1,5 +1,15 @@
-import ProductCard from 
- import ProductListing from "../components/ProductListing";
+const corrigir = () => {
+  return ( 
+    <>
+    corrigir
+    </>
+   );
+}
+ 
+export default corrigir;
+
+/*
+import ProductListing from "../components/ProductListing";
  
 
 
@@ -78,3 +88,4 @@ const ProductCard = ({ imageSrc, title, text, price }) => {
 
 
 export default  ProductListing;
+*/
