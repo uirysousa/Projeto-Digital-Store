@@ -5,6 +5,7 @@ import BuyBox from '../components/BuyBox';
 import ProductOptions from '../components/ProductOptions';
 import Section2 from '../components/Section2';
 import ProductListing from '../components/ProductListing';
+import sapato from '../../public/sapato.png'
 
 const ProductViewPageContainer = styled.div`
   display: flex;
@@ -38,7 +39,7 @@ const BuyButton = styled.button`
 const relatedProducts = [
   {
     name: "K-Swiss V8 - Masculino",
-    image: "https://url.imagem/do/produto1.png",
+    image: {sapato},
     price: 200,
     priceDiscount: 149.9
   },
@@ -64,10 +65,10 @@ const relatedProducts = [
 
 const ProductViewPage = () => {
   const images = [
-    { src: '/public/product-image-1.png' },
-    { src: '/public/product-image-2.png' },
-    { src: '/public/product-image-3.png' },
-    { src: '/public/product-image-4.png' },
+    { src: './public/produc-image-1.jpeg' },
+    { src: './public/produc-image-2.jpeg' },
+    { src: './public/produc-image-3.jpeg' },
+    { src: './public/produc-image-4.jpeg' },
   ];
 
   return (

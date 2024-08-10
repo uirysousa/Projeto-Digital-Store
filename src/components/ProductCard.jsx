@@ -1,16 +1,17 @@
 import ProductCard from './caminho/do/arquivo/ProductCard'; // Corrija o caminho do import
 
+
 const ProductListing = () => {
   return (
     <div className="product">
       <ProductCard 
-        imageSrc="../" 
+        imageSrc="./public/sapato.png" 
         title="Tênis" 
         text="K-Swiss V8 - Masculino."
         price="$300,00  $200,00" 
       />
       <ProductCard 
-        imageSrc=" " 
+        imageSrc="./src/assets/tenis.png " 
         title="Tênis" 
         text="K-Swiss V8 - Masculino."
         price="$300,00  $200,00" 

@@ -15,7 +15,7 @@ const ImageContainer = styled.div`
     height: 100%;
     object-fit: cover;
   }
-`;
+`
 
 const Gallery = ({ images }) => {
   const settings = {

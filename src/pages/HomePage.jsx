@@ -150,10 +150,10 @@ const Galeria2Conteiner = styled.header`
 
 const HomePage = () => {
     const Galeria = [
-        { title: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.', text: 'Ver Ofertas', imagem: './src/assets/tenis.png' }
+        { title: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.', text: 'Ver Ofertas', src: './src/assets/tenis.png' }
     ];
     const Galeria2 = [
-        { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip', text: 'Ver Ofertas', imagem: './public/jordanAir.png' }
+        { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip', text: 'Ver Ofertas', src: './public/jordanAir.png' }
     ];
 
     return (
