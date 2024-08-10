@@ -212,10 +212,10 @@ const relatedProducts = [
       priceDiscount: 149.9
     }
 
-
 ];
 
 const HomePage = () => {
+
     const Galeria = [
         { title: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.', text: 'Ver Ofertas', src: './src/assets/tenis.png' }
     ];

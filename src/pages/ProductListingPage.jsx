@@ -57,7 +57,6 @@ const ProductListPage = () => {
       price: 200,
       priceDiscount: 149.9
     }
-
 ];
   return ( 
     <>
