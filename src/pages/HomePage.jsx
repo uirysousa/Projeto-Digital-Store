@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Gallery from '../components/Gallery';
 import Section from '../components/Section';
+import ProductListing from '../components/ProductListing';
+import sapato from '../../public/sapato.png';
 
 // Styled components
 const ConteinerPrincipal = styled.header`
@@ -147,14 +149,79 @@ const Galeria2Conteiner = styled.header`
         color: #C92071;
     }
 `;
+const SectionProdutos = styled.header`
+
+    display: grid;
+    text-align: left;
+    color:#474747;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin: 10px;
+    width:100%;
+    height:800px;
+`;
+
+
+const relatedProducts = [
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    }
+
+
+];
 
 const HomePage = () => {
     const Galeria = [
         { title: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.', text: 'Ver Ofertas', src: './src/assets/tenis.png' }
     ];
-    const Galeria2 = [
+   /* const Galeria2 = [
         { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip', text: 'Ver Ofertas', src: './public/jordanAir.png' }
-    ];
+    ];*/
 
     return (
         <ConteinerPrincipal>
@@ -167,10 +234,20 @@ const HomePage = () => {
             
             <Section />
 
+            <SectionProdutos >
+
+                <h3>Produtos em alta</h3>
+
+                <ProductListing products={relatedProducts} />
+            </SectionProdutos>
+
             <Galeria2Conteiner>
                 <h4>Oferta especial</h4>
                 <div>
-                    <Gallery images={Galeria2} title="Air Jordan edição de colecionador" />
+                    <h2>Air Jordan edição de colecionador </h2>
+                    <img src='./public/jordanAir.png'/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <button>Ver Ofertas</button>
                 </div>
             </Galeria2Conteiner>
         </ConteinerPrincipal>

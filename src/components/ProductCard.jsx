@@ -5,7 +5,7 @@ const ProductListing = () => {
   return (
     <div className="product">
       <ProductCard 
-        imageSrc="./public/sapato.png" 
+        imageSrc="" 
         title="Tênis" 
         text="K-Swiss V8 - Masculino."
         price="$300,00  $200,00" 
