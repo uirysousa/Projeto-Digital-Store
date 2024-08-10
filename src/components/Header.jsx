@@ -49,13 +49,18 @@ const NavSection = styled.nav`
   }
 
   & li {
-    margin: 0 15px;
+    margin: 0 15px; 
   }
 
   & a {
     text-decoration: none;
     color: #333;
-    font-size: 18px;
+    font-size: 18px;  
+  }
+  & a:focus{
+    text-decoration: underline;  
+    text-decoration-color: #C92071;
+    font-size: 20px;
   }
 
   @media (max-width: 768px) {
