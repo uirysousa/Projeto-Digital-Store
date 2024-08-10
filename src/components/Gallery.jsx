@@ -21,7 +21,7 @@ const ImageContainer = styled.div`
 const Gallery = ({ images }) => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -32,6 +32,11 @@ const Gallery = ({ images }) => {
     <Slider {...settings}>
       {images.map((image, index) => (
         <ImageContainer key={index}>
+          <div>
+          <h2>{image.title}</h2>
+          <p>{image.paragraph}</p>
+          <button> {image.text}</button>
+         </div>
           <img src={image.src} alt={`Product ${index + 1}`} />
         </ImageContainer>
       ))}

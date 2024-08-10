@@ -7,6 +7,7 @@ const handleSearch = () => {
   Navigate(`/ProductViewPage`);
 };
 
+
 const ProductListPage = () => {
   const relatedProducts  = [
     {
@@ -60,6 +61,7 @@ const ProductListPage = () => {
 ];
   return ( 
     <>
+    <h1>lista de produtos</h1>
     <ProductListing products ={relatedProducts}/>
     </>
    );

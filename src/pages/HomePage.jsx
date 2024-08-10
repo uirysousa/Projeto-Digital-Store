@@ -16,8 +16,8 @@ const HomeConteiner = styled.header`
     display: flex;
     background-color: #F5F5F5;
     width: 100%;
-    height: 600px;
-    flex-direction: column;
+    height: 750px;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 
@@ -43,15 +43,24 @@ const HomeConteiner = styled.header`
         width: 280px;
         height: 24px;
         position: relative;
-        top: 75px;
-        left: 182px;
+        top: 200px;
+        left: -40px;
         color: #F6AA1C;
+    }
+      &&.dQLgtq.dQLgtq div{
+        display:flex;
     }
 `;
 const ItemGaleria1 = styled.li`
     display: flex;
+    justify-content:center;
+    align-items:center;
     flex-direction: column;
     flex-wrap: wrap;
+    && div{
+        display:flex;
+        justify-content:center;  
+    }
 
     && p {
         display: flex;
@@ -63,7 +72,7 @@ const ItemGaleria1 = styled.li`
     }
     && button {
         display: flex;
-        width: 220px;
+        width: 150px;
         height: 48px;
         justify-content: center;
         align-items: center;
@@ -75,27 +84,37 @@ const ItemGaleria1 = styled.li`
         top: -36px;
         right: 66px;
     }
+
     && li {
         display: flex;
+        flex-direction:row;
         width: 1440px;
         height: 681px;
+        list-style:none;
     }
     && img {
-        display: flex;
-        position: relative;
-        top: -120px;
-        right: 261px;
+        display:flex;
+        width:800px;
+        height:500px;
+        position:relative;
+        top:-620px;
+        left:800px;
+        justify-content:center;
+        align-items:center;
     }   
 `;
 const Galeria2Conteiner = styled.header`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     width: 100%;
     height: 553px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: aqua;
+    background-color: #F9F8FE;
+    flex-direction: row-reverse;
+    gap: 80px;
 
     && img {
         display: flex;
@@ -142,11 +161,14 @@ const Galeria2Conteiner = styled.header`
         display: flex;
         flex-wrap: wrap;
         width: 280px;
-        height: 24px;
-        position: relative;
-        top: 160px;
-        left: 720px;
+        height: 2px;
         color: #C92071;
+    }
+    && div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 `;
 const SectionProdutos = styled.header`
@@ -156,10 +178,11 @@ const SectionProdutos = styled.header`
     color:#474747;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    margin: 10px;
+    margin: 80px;
     width:100%;
-    height:800px;
+    height:700px;
 `;
+
 
 
 const relatedProducts = [
@@ -217,18 +240,16 @@ const relatedProducts = [
 const HomePage = () => {
 
     const Galeria = [
-        { title: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.', text: 'Ver Ofertas', src: './src/assets/tenis.png' }
+        { title: 'Queima de estoque Nike 🔥', paragraph:'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.', text: 'Ver Ofertas', src: './src/assets/tenis.png' }
     ];
-   /* const Galeria2 = [
-        { title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip', text: 'Ver Ofertas', src: './public/jordanAir.png' }
-    ];*/
+
 
     return (
         <ConteinerPrincipal>
             <HomeConteiner>
                 <ItemGaleria1>
                     <h4>Melhores ofertas personalizadas</h4>
-                    <Gallery title="Queima de estoque Nike 🔥" images={Galeria} />
+                    <Gallery  images={Galeria} />
                 </ItemGaleria1>
             </HomeConteiner>
             
@@ -242,13 +263,13 @@ const HomePage = () => {
             </SectionProdutos>
 
             <Galeria2Conteiner>
-                <h4>Oferta especial</h4>
-                <div>
-                    <h2>Air Jordan edição de colecionador </h2>
+                    <div>
+                        <h4>Oferta especial</h4>
+                        <h2>Air Jordan edição de colecionador </h2> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                        <button>Ver Ofertas</button>
+                    </div>
                     <img src='./public/jordanAir.png'/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                    <button>Ver Ofertas</button>
-                </div>
             </Galeria2Conteiner>
         </ConteinerPrincipal>
     );

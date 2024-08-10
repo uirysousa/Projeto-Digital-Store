@@ -1,7 +1,4 @@
-import ProductCard from './caminho/do/arquivo/ProductCard'; // Corrija o caminho do import
-
-
-const ProductListing = () => {
+const ProductCard = () => {
   return (
     <div className="product">
       <ProductCard 
@@ -56,4 +53,4 @@ const ProductListing = () => {
   );
 };
 
-export default ProductListing;
+export default ProductCard;

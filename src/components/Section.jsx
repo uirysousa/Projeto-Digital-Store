@@ -106,10 +106,6 @@ const Section = () => {
                 </div>
             </Colecao2>
 
-            <div>
-            <h3 className="title2">Coleções em destaque</h3>
-            </div>
-
         </SectionConteiner>
       );
 }
