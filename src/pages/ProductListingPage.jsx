@@ -1,12 +1,70 @@
+import { Navigate } from 'react-router-dom';
+import sapato from '../../public/sapato.png';
+import ProductListing from '../components/ProductListing';
 
 
-const corrigir = () => {
+const handleSearch = () => {
+  Navigate(`/ProductViewPage`);
+};
+
+const ProductListPage = () => {
+  const relatedProducts  = [
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9,
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    },
+    {
+      name: "K-Swiss V8 - Masculino",
+      image: `${sapato}`,
+      price: 200,
+      priceDiscount: 149.9
+    }
+
+];
   return ( 
     <>
-
+    <ProductListing products ={relatedProducts}/>
     </>
    );
 }
  
-export default corrigir;
+export default ProductListPage;
 
