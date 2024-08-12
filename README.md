@@ -29,7 +29,7 @@ $ cd nlw1 (nome da pasta)
 $ code .
 
 # Instale as dependências
-$ npm install
+$ npm install vite
 
 # Execute a aplicação
 $ npm run dev
