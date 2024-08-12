@@ -43,5 +43,5 @@ $ npm run dev
 
 - [Uiry Sousa Monteiro](https://github.com/uirysousa)
 - [Pedro Roger Alves Dos Santos](https://github.com/Pedro-Roger)
-- [Max Douglas](https://github.com/Douglasdrok)
+- [Max Douglas Oliveira da Costa](https://github.com/Douglasdrok)
 
