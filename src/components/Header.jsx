@@ -152,8 +152,8 @@ const Header = () => {
       <NavSection>
         <ul>
           <li><Link to={"/"}>Home</Link></li>
-          <li><Link to={"/ProductViewPage"}>Produtos</Link></li>
-          <li><Link to={"/ProductListingPage"}>Categorias</Link></li>
+          <li><Link to={"/ProductListingPage"}>Produtos</Link></li>
+          <li><Link to={"/ProductViewPage"}>Categorias</Link></li>
           <li><Link to={"/meus-pedidos"}>Meus Pedidos</Link></li>
         </ul>
       </NavSection>

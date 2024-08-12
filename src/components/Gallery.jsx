@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
+
 const ImageContainer = styled.div`
   width: 100%;
   height: 570px;
@@ -35,7 +36,8 @@ const Gallery = ({ images }) => {
           <div>
           <h2>{image.title}</h2>
           <p>{image.paragraph}</p>
-          <button> {image.text}</button>
+          <button>{image.text}</button>
+          
          </div>
           <img src={image.src} alt={`Product ${index + 1}`} />
         </ImageContainer>

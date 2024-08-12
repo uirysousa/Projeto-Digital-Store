@@ -1,152 +1,257 @@
-import { Navigate } from 'react-router-dom';
 import sapato from '../../public/sapato.png';
 import ProductListing from '../components/ProductListing';
- import React from 'react';
+import React from 'react';
+import styled from 'styled-components';
 
-  
- 
-  
- 
 
-const handleSearch = () => {
-  Navigate(`/ProductViewPage`);
-};
+const ConteinerPrincipal = styled.header`
+  display: flex;
+  margin: 50px;
+  height:100%;
+`
+const Filtro = styled.header`
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  flex-direction: column;
+  & fieldset{
+    width:200px;
+  }
+`
+const Container = styled.div`
+  width: 308px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+`;
+const Label = styled.label`
+  font-size: 16px;
+  color: #474747; 
+`;
 
-const ProductListPage = () => {
-  const relatedProducts  = [
+const Select = styled.select`
+  width: 200px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  color: #474747; 
+  appearance: none; /* Remove o estilo padrão do select */
+`;
 
-    {
-      name: "K-Swiss V8 - Masculino",
-      image: `${sapato}`,
-      price: 200,
-      priceDiscount: 149.9,
-    },
-    {
-      name: "K-Swiss V8 - Masculino",
-      image: `${sapato}`,
-      price: 200,
-      priceDiscount: 149.9
-    },
-    {
-      name: "K-Swiss V8 - Masculino",
-      image: `${sapato}`,
-      price: 200,
-      priceDiscount: 149.9
-    },
-    {
-      name: "K-Swiss V8 - Masculino",
-      image: `${sapato}`,
-      price: 200,
-      priceDiscount: 149.9
-    },
-    {
-      name: "K-Swiss V8 - Masculino",
-      image: `${sapato}`,
-      price: 200,
-      priceDiscount: 149.9
-    },
-    {
-      name: "K-Swiss V8 - Masculino",
-      image: `${sapato}`,
-      price: 200,
-      priceDiscount: 149.9
-    },
-    {
-      name: "K-Swiss V8 - Masculino",
-      image: `${sapato}`,
-      price: 200,
-      priceDiscount: 149.9
-    },
-    {
-      name: "K-Swiss V8 - Masculino",
-      image: `${sapato}`,
-      price: 200,
-      priceDiscount: 149.9
-    }
-    
+const Option = styled.option`
+  color: #474747; 
+`;
+
+
+const CheckboxInput = styled.input`
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    background-color: white; 
+  &:checked + label::before {
+    background-color: #C92071; /* Cor de fundo quando marcado */
+  }
+`;
+
+export const relatedProducts = [
+
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9,
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+  {
+    name: "K-Swiss V8 - Masculino",
+    image: `${sapato}`,
+    price: 200,
+    priceDiscount: 149.9
+  },
+
 ];
 
-
-  return ( 
-    <> 
-  <h1>Filtrar por</h1>
- 
-<fieldset>
-<h2>Marka</h2>
-<div  class="field-checkbox">
-    <input type="checkbox" ></input>
-    <label> Addidas</label>
-</div>
- 
-<div class="field-checkbox">
-    <input type="checkbox" ></input>
-    <label> Canlenciaga</label>
-</div>
-
-<div class="field-checkbox">
-    <input type="checkbox"></input>
-    <label >K-Swiss</label>
-</div>
-<div class="field-checkbox">
-    <input type="checkbox"></input>
-    <label >Nike</label>
-</div>
-<div class="field-checkbox">
-    <input type="checkbox"  ></input>
-    <label>Puma</label>
-</div>
-
-
-<h3>Categoria</h3>
-<div class="field-checkbox">
-    <input type="checkbox" ></input>
-    <label > Esporte e lazer</label>
-</div>
-
-<div class="field-checkbox">
-    <input type="checkbox"  ></input>
-    <label>Casual</label>
-</div>
-
-<div class="field-checkbox">
-    <input type="checkbox"  ></input>
-    <label> Ultilitario</label>
-</div>
-
-<div class="field-checkbox">
-    <input type="checkbox"></input>
-    <label>Corrida</label>
-</div>
-
-<h4>Genêro</h4>
-<div class="field-checkbox">
-    <input type="checkbox" ></input>
-    <label> Masculino</label>
-</div>
-<div class="field-checkbox">
-    <input type="checkbox"></input>
-    <label>Feminino</label>
-</div>
-
-       <h5>Estado</h5>
-<div class="field-radiobutton">
-    <input type="radio"></input>
-    <label > Novo</label>
-</div>
-<div class="field-radiobutton">
-    <input type="radio" ></input>
-    <label  >Usado</label>
-</div>
-</fieldset>
+const ProductListPage = () => {
   
- 
 
- 
-    <ProductListing products ={relatedProducts}/>
-  
- 
-    </>
-   );
+  return (
+    <ConteinerPrincipal>
+
+      <Filtro>
+      <Container>
+        <Label>Ordenar por</Label>
+        <Select>
+          <Option value="menor_preco">Menor preço</Option>
+          <Option value="maior_preco">Maior preço</Option>
+        </Select>
+      </Container>
+
+        <h1>Filtrar por</h1>
+
+        <fieldset>
+          <h2>Marka</h2>
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label> Addidas</label>
+          </div>
+
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label> Canlenciaga</label>
+          </div>
+
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label >K-Swiss</label>
+          </div>
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label >Nike</label>
+          </div>
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label>Puma</label>
+          </div>
+
+
+          <h3>Categoria</h3>
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label > Esporte e lazer</label>
+          </div>
+
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label>Casual</label>
+          </div>
+
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label> Ultilitario</label>
+          </div>
+
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label>Corrida</label>
+          </div>
+
+          <h4>Genêro</h4>
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label> Masculino</label>
+          </div>
+          <div class="field-checkbox">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label>Feminino</label>
+          </div>
+
+          <h5>Estado</h5>
+          <div class="field-radiobutton">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label > Novo</label>
+          </div>
+          <div class="field-radiobutton">
+          <CheckboxInput type="checkbox" ></CheckboxInput>
+            <label  >Usado</label>
+          </div>
+        </fieldset>
+      </Filtro>
+
+      <ProductListing products={relatedProducts} />
+
+
+    </ConteinerPrincipal>
+  );
 }
- 
+
 export default ProductListPage;

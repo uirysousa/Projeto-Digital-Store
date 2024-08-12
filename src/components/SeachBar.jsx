@@ -50,10 +50,7 @@ const SearchButton = styled.button`
 `;
 
 const Produtos = [
-    'tenis',
-    'Casaco',
-    'chuteira',
-    'blusa',
+  "K-Swiss V8 - Masculino",
 ]
 
 function BarraPesquisa() {

@@ -41,7 +41,7 @@ $ npm run dev
     
 ## Authors
 
-- [Uiry Monteiro](https://github.com/uirysousa)
-- [Pedro Roger](https://github.com/Pedro-Roger)
+- [Uiry Sousa Monteiro](https://github.com/uirysousa)
+- [Pedro Roger Alves Dos Santos](https://github.com/Pedro-Roger)
 - [Max Douglas](https://github.com/Douglasdrok)
 

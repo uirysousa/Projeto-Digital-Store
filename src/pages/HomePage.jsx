@@ -240,7 +240,7 @@ const relatedProducts = [
 const HomePage = () => {
 
     const Galeria = [
-        { title: 'Queima de estoque Nike 🔥', paragraph:'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.', text: 'Ver Ofertas', src: './src/assets/tenis.png' }
+        { title: 'Queima de estoque Nike 🔥', paragraph:'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',link:'/ProductViewPage' , text: 'Ver Ofertas', src: './src/assets/tenis.png' }
     ];
 
 
