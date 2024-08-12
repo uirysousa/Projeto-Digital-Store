@@ -8,14 +8,19 @@ const ConteinerPrincipal = styled.header`
   display: flex;
   margin: 50px;
   height:100%;
+  background-color: #F9F8FE;
 `
 const Filtro = styled.header`
   display: flex;
   justify-content: baseline;
   align-items: baseline;
   flex-direction: column;
+  margin:20px;
   & fieldset{
     width:200px;
+    margin-top:30px;
+    background-color:#FFFFFF;
+    border:none;
   }
 `
 const Container = styled.div`
@@ -28,6 +33,7 @@ const Container = styled.div`
 `;
 const Label = styled.label`
   font-size: 16px;
+  font-weight:bold;
   color: #474747; 
 `;
 
@@ -39,13 +45,12 @@ const Select = styled.select`
   padding: 8px;
   font-size: 14px;
   color: #474747; 
-  appearance: none; /* Remove o estilo padrão do select */
+  appearance: none; 
 `;
 
 const Option = styled.option`
   color: #474747; 
 `;
-
 
 const CheckboxInput = styled.input`
     display: inline-block;
@@ -60,7 +65,7 @@ const CheckboxInput = styled.input`
   }
 `;
 
-export const relatedProducts = [
+const relatedProducts = [
 
   {
     name: "K-Swiss V8 - Masculino",
@@ -168,6 +173,9 @@ const ProductListPage = () => {
     <ConteinerPrincipal>
 
       <Filtro>
+
+
+        <fieldset>
       <Container>
         <Label>Ordenar por</Label>
         <Select>
@@ -175,11 +183,9 @@ const ProductListPage = () => {
           <Option value="maior_preco">Maior preço</Option>
         </Select>
       </Container>
-
-        <h1>Filtrar por</h1>
-
-        <fieldset>
-          <h2>Marka</h2>
+        <h2>Filtrar por</h2>
+          <hr/>
+          <h3>Marka</h3>
           <div class="field-checkbox">
           <CheckboxInput type="checkbox" ></CheckboxInput>
             <label> Addidas</label>
@@ -225,7 +231,7 @@ const ProductListPage = () => {
             <label>Corrida</label>
           </div>
 
-          <h4>Genêro</h4>
+          <h3>Genêro</h3>
           <div class="field-checkbox">
           <CheckboxInput type="checkbox" ></CheckboxInput>
             <label> Masculino</label>
@@ -235,7 +241,7 @@ const ProductListPage = () => {
             <label>Feminino</label>
           </div>
 
-          <h5>Estado</h5>
+          <h3>Estado</h3>
           <div class="field-radiobutton">
           <CheckboxInput type="checkbox" ></CheckboxInput>
             <label > Novo</label>

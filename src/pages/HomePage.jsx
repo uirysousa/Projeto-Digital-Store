@@ -4,6 +4,7 @@ import Gallery from '../components/Gallery';
 import Section from '../components/Section';
 import ProductListing from '../components/ProductListing';
 import sapato from '../../public/sapato.png';
+import { Link } from 'react-router-dom';
 
 // Styled components
 const ConteinerPrincipal = styled.header`
@@ -147,6 +148,10 @@ const Galeria2Conteiner = styled.header`
         font-weight: bold;
         border-radius: 4px;
         background: #C92071;
+        & a{
+            color:black;
+            text-decoration:none;
+        }
     }
     && li {
         display: flex;
@@ -240,7 +245,7 @@ const relatedProducts = [
 const HomePage = () => {
 
     const Galeria = [
-        { title: 'Queima de estoque Nike 🔥', paragraph:'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',link:'/ProductViewPage' , text: 'Ver Ofertas', src: './src/assets/tenis.png' }
+        { title: 'Queima de estoque Nike 🔥', paragraph:'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.', text: 'Ver Ofertas', src: './src/assets/tenis.png' }
     ];
 
 
@@ -267,7 +272,7 @@ const HomePage = () => {
                         <h4>Oferta especial</h4>
                         <h2>Air Jordan edição de colecionador </h2> 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                        <button>Ver Ofertas</button>
+                        <button><Link to={"/ProductViewPage"}>Ver Ofertas</Link></button>
                     </div>
                     <img src='./public/jordanAir.png'/>
             </Galeria2Conteiner>
